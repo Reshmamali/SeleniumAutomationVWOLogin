@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class loginVWO {
 
-    @Test
+    @Test(groups = {"negative","sanity","stage"})
     public void testSelenium() throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
@@ -33,7 +33,7 @@ public class loginVWO {
         driver.quit();
     }
 
-    @Test
+    @Test(groups = {"positive","sanity","stage"})
     public void testFreeTrial() throws InterruptedException {
 
         ChromeOptions chromeOptions = new ChromeOptions();
